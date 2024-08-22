@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "3.2.2"
 
 gem "bootsnap", require: false
+gem 'daemons'
 gem 'delayed_job'
 gem 'delayed_job_active_record'
 gem 'httparty'
