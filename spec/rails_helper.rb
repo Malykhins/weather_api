@@ -63,17 +63,11 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-
-  config.after(:suite) do
-    puts "\nCleaning up VCR cassettes..."
-    Dir.glob("#{Rails.root}/spec/vcr_cassettes/*.yml").each do |file|
-      File.delete(file)
-    end
-  end
 end
 
 VCR.configure do |config|
-  config.cassette_library_dir = "spec/vcr_cassettes"
+  config.cassette_library_dir = 'spec/vcr_cassettes'
   config.hook_into :webmock
   config.configure_rspec_metadata!
+  config.filter_sensitive_data('<API_KEY>') { Rails.application.credentials.development[:accuweather][:appid] }
 end

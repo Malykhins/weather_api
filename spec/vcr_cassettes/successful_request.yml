@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dataservice.accuweather.com/currentconditions/v1/292195/historical/24?apikey=<API_KEY>&details=false&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 23 Aug 2024 14:35:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '11930'
+      Connection:
+      - keep-alive
+      Request-Context:
+      - appId=cid-v1:0158d69b-75d9-4a19-9e5f-a14693f847e4
+      Ratelimit-Limit:
+      - '50'
+      Ratelimit-Remaining:
+      - '37'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept
+      Access-Control-Max-Age:
+      - '3628800'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - public, max-age=191
+      Expires:
+      - Fri, 23 Aug 2024 14:39:10 GMT
+      Akamai-Grn:
+      - 0.2d0cde17.1724423759.ff3eba9
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - deflate;q=0.6
+      - gzip;q=1.0
+      - identity;q=0.3
+      Host:
+      - api.accuweather.com
+      User-Agent:
+      - Ruby
+      X-Forwarded-For:
+      - 92.51.19.226
+      X-Forwarded-Port:
+      - '80'
+      X-Forwarded-Proto:
+      - http
+    body:
+      encoding: UTF-8
+      string: '[{"LocalObservationDateTime":"2024-08-23T16:58:00+03:00","EpochTime":1724421480,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":29.4,"Unit":"C","UnitType":17},"Imperial":{"Value":85.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T16:02:00+03:00","EpochTime":1724418120,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":29.4,"Unit":"C","UnitType":17},"Imperial":{"Value":85.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T14:58:00+03:00","EpochTime":1724414280,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":31.4,"Unit":"C","UnitType":17},"Imperial":{"Value":89.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T13:57:00+03:00","EpochTime":1724410620,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":30.7,"Unit":"C","UnitType":17},"Imperial":{"Value":87.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T13:02:00+03:00","EpochTime":1724407320,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":30.7,"Unit":"C","UnitType":17},"Imperial":{"Value":87.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T12:02:00+03:00","EpochTime":1724403720,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":29.7,"Unit":"C","UnitType":17},"Imperial":{"Value":85.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T10:58:00+03:00","EpochTime":1724399880,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":26.7,"Unit":"C","UnitType":17},"Imperial":{"Value":80.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T10:02:00+03:00","EpochTime":1724396520,"WeatherText":"Cloudy","WeatherIcon":7,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":26.7,"Unit":"C","UnitType":17},"Imperial":{"Value":80.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T08:58:00+03:00","EpochTime":1724392680,"WeatherText":"Mostly
+        cloudy","WeatherIcon":6,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":23.3,"Unit":"C","UnitType":17},"Imperial":{"Value":74.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T08:02:00+03:00","EpochTime":1724389320,"WeatherText":"Clouds
+        and sun","WeatherIcon":4,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":23.3,"Unit":"C","UnitType":17},"Imperial":{"Value":74.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T06:57:00+03:00","EpochTime":1724385420,"WeatherText":"Clouds
+        and sun","WeatherIcon":4,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":19.5,"Unit":"C","UnitType":17},"Imperial":{"Value":67.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T05:58:00+03:00","EpochTime":1724381880,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":20.5,"Unit":"C","UnitType":17},"Imperial":{"Value":69.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T04:57:00+03:00","EpochTime":1724378220,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":22.0,"Unit":"C","UnitType":17},"Imperial":{"Value":72.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T03:58:00+03:00","EpochTime":1724374680,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":22.3,"Unit":"C","UnitType":17},"Imperial":{"Value":72.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T02:58:00+03:00","EpochTime":1724371080,"WeatherText":"Mostly
+        clear","WeatherIcon":34,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":22.3,"Unit":"C","UnitType":17},"Imperial":{"Value":72.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T01:58:00+03:00","EpochTime":1724367480,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":20.7,"Unit":"C","UnitType":17},"Imperial":{"Value":69.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-23T00:58:00+03:00","EpochTime":1724363880,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":20.8,"Unit":"C","UnitType":17},"Imperial":{"Value":69.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T23:58:00+03:00","EpochTime":1724360280,"WeatherText":"Partly
+        cloudy","WeatherIcon":35,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":21.9,"Unit":"C","UnitType":17},"Imperial":{"Value":71.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T22:58:00+03:00","EpochTime":1724356680,"WeatherText":"Some
+        clouds","WeatherIcon":36,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":23.5,"Unit":"C","UnitType":17},"Imperial":{"Value":74.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T21:57:00+03:00","EpochTime":1724353020,"WeatherText":"Some
+        clouds","WeatherIcon":36,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":25.1,"Unit":"C","UnitType":17},"Imperial":{"Value":77.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T20:58:00+03:00","EpochTime":1724349480,"WeatherText":"Some
+        clouds","WeatherIcon":36,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":26.8,"Unit":"C","UnitType":17},"Imperial":{"Value":80.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T19:58:00+03:00","EpochTime":1724345880,"WeatherText":"Some
+        clouds","WeatherIcon":36,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":false,"Temperature":{"Metric":{"Value":30.4,"Unit":"C","UnitType":17},"Imperial":{"Value":87.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T19:02:00+03:00","EpochTime":1724342520,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":30.4,"Unit":"C","UnitType":17},"Imperial":{"Value":87.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"},{"LocalObservationDateTime":"2024-08-22T18:02:00+03:00","EpochTime":1724338920,"WeatherText":"Partly
+        sunny","WeatherIcon":3,"HasPrecipitation":false,"PrecipitationType":null,"IsDayTime":true,"Temperature":{"Metric":{"Value":32.9,"Unit":"C","UnitType":17},"Imperial":{"Value":91.0,"Unit":"F","UnitType":18}},"MobileLink":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us","Link":"http://www.accuweather.com/en/ru/belgorod/292195/current-weather/292195?lang=en-us"}]'
+  recorded_at: Fri, 23 Aug 2024 14:36:00 GMT
+recorded_with: VCR 6.2.0
