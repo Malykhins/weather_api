@@ -1,24 +1,25 @@
-# README
+# Weather_app API
+> Ruby 3.2.2
+>
+> Rails 7.1.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup
+> 1. Install dependencies: `bundle install`
+> 2. Create and migrate the database: `rails db:create && rails db:migrate`
+> 3. Start the server: `rails s`
 
-Things you may want to cover:
+Visit [http://localhost:3000/](http://localhost:3000/) to see the app in action.
 
-* Ruby version
+## API Key for AccuWeather
+To run the app, you need an API key from [developer.accuweather.com](https://developer.accuweather.com/).
 
-* System dependencies
+### Adding the API Key
+> 1. Edit credentials: `EDITOR=vi bin/rails credentials:edit`
+> 2. Add your API key:
 
-* Configuration
+>   development:
+>     accuweather:
+>       appid: your_accuweather_api_key
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Tests:
+> rspec spec
